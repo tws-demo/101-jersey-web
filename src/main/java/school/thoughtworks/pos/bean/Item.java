@@ -1,4 +1,10 @@
-package school.thoughtworks.bean;
+package school.thoughtworks.pos.bean;
+
+import org.apache.commons.collections.IterableMap;
+import org.apache.commons.collections.map.HashedMap;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Item {
     private int id;
@@ -29,12 +35,13 @@ public class Item {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return "Item{" +
-                "id=" + id +
-                ", price=" + price +
-                ", name='" + name + '\'' +
-                '}';
+    public Map<String, Object> toMap() {
+        Map<String, Object> result = new HashMap<>();
+
+        result.put("id", getId());
+        result.put("name", getName());
+        result.put("price", getPrice());
+
+        return result;
     }
 }

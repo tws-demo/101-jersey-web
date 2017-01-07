@@ -1,6 +1,6 @@
-package school.thoughtworks.mapper;
+package school.thoughtworks.pos.mapper;
 
-import school.thoughtworks.bean.Item;
+import school.thoughtworks.pos.bean.Item;
 
 import java.util.List;
 
