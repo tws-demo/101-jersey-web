@@ -9,19 +9,20 @@
 
 2. 检查 ./src/main/resources/config.properties 中参数配置是否正确
 
-3. 然后在命令行中执行如下命令
-
+3. 在命令行中执行如下命令
 
 ```bash
-./gradlew jettyrun
+  ./gradlew jettyrun
 ```
-然后可以再浏览器中输入 http://localhost:8080/api 即可看到现有接口
+4. 在浏览器中输入 http://localhost:8080/jersey-mybaties-I 即可看到现有接口
+
 
 
 
 ## 常见问题
 
 1. 若是基于docker的数据库，可能会出现假死现象，需要重启 docker 和 mysql
+
 
 
 
@@ -40,8 +41,12 @@
 
 3. 创建 cart 表，cart 表与item 表为多对多关系，并参照上面完成相应接口
 
+4. 尽量用 stream 操作集合
+
 
 #### 进阶篇
+
+1. 用 flyway 的方式创建上述数据库，并完成功能
 
 1. 参照 root_path_shoule_return_items_uri 完成上述接口的集成测试
 
