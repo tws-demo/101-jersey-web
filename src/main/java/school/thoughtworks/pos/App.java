@@ -32,7 +32,7 @@ public class App extends ResourceConfig {
                 });
     }
 
-    private SqlSession getSession() {
+    public static SqlSession getSession() {
         String resource = "mybites/mybatis-config.xml";
         SqlSession session = null;
         try {

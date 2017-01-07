@@ -1,7 +1,7 @@
 ## 此 repo 用来练习基于 jersey + mybaties + flyway 的api.
 
 #### 运行方式
-在数据库中新建 supermarket 库
+在 Mysql 数据库中新建 supermarket 库
 
 ```mysql
 CREATE DATABASE `supermarket` /*!40100 DEFAULT CHARACTER SET utf8 */

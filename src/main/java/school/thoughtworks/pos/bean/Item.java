@@ -1,8 +1,5 @@
 package school.thoughtworks.pos.bean;
 
-import org.apache.commons.collections.IterableMap;
-import org.apache.commons.collections.map.HashedMap;
-
 import java.util.HashMap;
 import java.util.Map;
 
