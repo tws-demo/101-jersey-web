@@ -6,11 +6,8 @@
    ```mysql
    CREATE DATABASE `supermarket` /*!40100 DEFAULT CHARACTER SET utf8 */
    ```
-
 2. 检查 ./src/main/resources/config.properties 中参数配置是否正确
-
 3. 在命令行中执行如下命令
-
 ```bash
   ./gradlew jettyrun
 ```
@@ -36,19 +33,15 @@
    DELETE /items/:id # 删除一个item
    PUT /items/:id	# 更新一个item
    ```
-
 2. 创建 category 表，category 表与 item 表为一对多关系，并参照上面完成相应接口
-
 3. 创建 cart 表，cart 表与item 表为多对多关系，并参照上面完成相应接口
-
 4. 尽量用 stream 操作集合
 
 
 #### 进阶篇
 
 1. 用 flyway 的方式创建上述数据库，并完成功能
-
-1. 参照 root_path_shoule_return_items_uri 完成上述接口的集成测试
+2. 参照 root_path_shoule_return_items_uri 完成上述接口的集成测试
 
 
 #### 提升篇
