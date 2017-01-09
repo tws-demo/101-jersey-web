@@ -1,16 +1,27 @@
 # 基于 jersey + mybaties + flyway 的api 练习
 
 ## 运行方式
-1. 在 Mysql 数据库中新建 supermarket 库
+1. 在 Mysql 数据库中新建 supermarket 库和 item 表
 
    ```mysql
    CREATE DATABASE `supermarket` /*!40100 DEFAULT CHARACTER SET utf8 */
+
+   CREATE TABLE `item` (
+     `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+     `price` double unsigned NOT NULL DEFAULT '0',
+     `name` varchar(255) DEFAULT NULL,
+     PRIMARY KEY (`id`)
+   ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+   # 可以在 item 中自定义两条数据
    ```
 2. 检查 ./src/main/resources/config.properties 中参数配置是否正确
 3. 在命令行中执行如下命令
-```bash
-  ./gradlew jettyrun
-```
+   ​```bash
+   ./gradlew jettyrun
+   ```
+
+   ```
 4. 在浏览器中输入 http://localhost:8080/jersey-mybaties-I 即可看到现有接口
 
 
