@@ -16,14 +16,19 @@
 
    # 可以在 item 中自定义两条数据
    ```
+
 2. 检查 ./src/main/resources/config.properties 中参数配置是否正确
+
 3. 在命令行中执行如下命令
    ```bash
    ./gradlew jettyrun
    ```
 
 4. 在浏览器中测试 http://localhost:8080/jersey-mybaties-I
+
 5. 在浏览器中测试 http://localhost:8080/jersey-mybaties-I/items 
+
+   ​
 
 
 ## 练习要求
