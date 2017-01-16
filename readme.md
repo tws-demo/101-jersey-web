@@ -5,7 +5,7 @@
 
    ```mysql
    CREATE DATABASE `supermarket` /*!40100 DEFAULT CHARACTER SET utf8 */
-   
+
    # 在supermarket中建表
    CREATE TABLE `item` (
      `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
@@ -21,12 +21,14 @@
    ```bash
    ./gradlew jettyrun
    ```
-   
+
 4. 在浏览器中测试 http://localhost:8080/jersey-mybaties-I
 5. 在浏览器中测试 http://localhost:8080/jersey-mybaties-I/items 
 
 
 ## 练习要求
+
+**重要：本题包含四个篇目：基础，进阶，提高，出栈，做完一个篇目后，需要到 https://jinshuju.net/f/27Zpwx 提交做题记录**
 
 #### 基础篇
 1. 完成下列接口
